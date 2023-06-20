@@ -147,7 +147,7 @@
       </div>
       <div class="col-md-8 wow fadeInRight" data-wow-delay="4500ms">
         <h2 class="heading heading_space">Fill the Contact Form<span class="divider-left"></span></h2>
-        <form class="form-inline findus" id="contact-form" onSubmit="return false">
+        <form class="form-inline findus"  action="contactform.php" method="post">
           <div class="row">
             <div class="col-md-12">
               <div id="result"></div>
@@ -166,12 +166,12 @@
             </div>
             <div class="col-md-4 col-sm-4">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Website" name="website" id="website" required>
+                <input type="text" class="form-control" placeholder="phone" name="phone" id="phone" required>
               </div>
             </div>
             <div class="col-md-12">
               <textarea placeholder="Comment"  name="message" id="message"></textarea>
-              <button class="btn_common yellow border_radius" id="btn_submit">Submit</button>
+              <button class="btn_common yellow border_radius" id="btn_submit" type="submit">Submit</button>
             </div>
           </div>
         </form>
